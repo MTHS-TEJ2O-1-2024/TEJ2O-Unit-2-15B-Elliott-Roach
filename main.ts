@@ -18,6 +18,8 @@ input.onButtonPressed(Button.A, function () {
     // setup to move sprite
     basic.clearScreen()
     sprite = game.createSprite(0, 0)
+    locationOneAxis = 0
+    looplocationAllAxis = 0
 
     while (looplocationAllAxis <= 19) {
         sprite.move(1)
