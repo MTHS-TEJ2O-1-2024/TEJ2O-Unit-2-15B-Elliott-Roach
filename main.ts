@@ -21,11 +21,13 @@ input.onButtonPressed(Button.A, function () {
     locationOneAxis = 0
     looplocationAllAxis = 0
 
+    //moving forward one
     while (looplocationAllAxis <= 19) {
         sprite.move(1)
         locationOneAxis = locationOneAxis + 1
         looplocationAllAxis = looplocationAllAxis +  1
 
+        //turning 90 digreas
         while (locationOneAxis == 5) {
             sprite.turn(Direction.Right, 90)
             locationOneAxis = 0
